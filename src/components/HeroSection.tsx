@@ -29,8 +29,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] mb-8"
             >
-              <span className="text-foreground">The</span>
-              <br />
+              <span className="text-foreground">The </span>
               <span className="text-primary animate-gold-shimmer">Saheedat</span>
             </motion.h1>
 
