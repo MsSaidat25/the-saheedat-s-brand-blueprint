@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, BookOpen, Award } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const milestones = [
   { icon: Briefcase, label: "8+ Years", detail: "Data & Analytics Experience" },
@@ -24,19 +25,29 @@ const AboutSection = () => {
               Saheedat Abbas
             </h2>
             <div className="w-16 h-0.5 bg-primary mb-8" />
+
+            {/* Mobile-only photo */}
+            <div className="lg:hidden mb-8 flex justify-center">
+              <img
+                src={profileImg}
+                alt="Saheedat Abbas"
+                className="w-64 h-72 object-cover object-top rounded-xl border border-primary/20"
+              />
+            </div>
+
             <div className="space-y-5 font-sans text-muted-foreground leading-relaxed">
               <p>
-                I'm a Data Scientist and AI Practitioner with over 8 years of experience 
-                transforming complex datasets into strategic insights. My career spans 
+                I'm a Data Scientist and AI Practitioner with over 8 years of experience
+                transforming complex datasets into strategic insights. My career spans
                 major financial institutions including Scotiabank, CIBC, and NAV Canada.
               </p>
               <p>
-                Currently pursuing my Master's at the University of Michigan while serving 
-                as an Adjunct Professor at Lambton College, I bridge the gap between 
+                Currently pursuing my Master's at the University of Michigan while serving
+                as an Adjunct Professor at Lambton College, I bridge the gap between
                 cutting-edge AI research and practical industry application.
               </p>
               <p>
-                My published work on AI governance frameworks reflects my commitment to 
+                My published work on AI governance frameworks reflects my commitment to
                 building AI systems that are not only powerful but responsible and ethical.
               </p>
             </div>

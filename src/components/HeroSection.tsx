@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
+import profileImg from "@/assets/profile.jpg";
 
 const HeroSection = () => {
   return (
@@ -9,57 +10,77 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 left-1/6 w-[300px] h-[300px] rounded-full bg-primary/3 blur-[100px] pointer-events-none" />
 
       <div className="container relative z-10 px-6 md:px-12">
-        <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="inline-block text-primary font-sans text-sm tracking-[0.3em] uppercase mb-6">
-              Data Scientist · AI Practitioner · Researcher
-            </span>
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.15 }}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] mb-8"
-          >
-            <span className="text-foreground">The</span>
-            <br />
-            <span className="text-primary animate-gold-shimmer">Saheedat</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="font-sans text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
-          >
-            Turning complex data into clear decisions. 8+ years bridging analytics, 
-            machine learning, and responsible AI — from banking fraud detection to 
-            pioneering governance frameworks.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.45 }}
-            className="flex flex-wrap gap-4"
-          >
-            <a
-              href="#projects"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm tracking-wide hover:bg-primary/90 transition-colors"
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Text */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
-              View My Work
-            </a>
-            <a
-              href="#about"
-              className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm tracking-wide hover:bg-secondary transition-colors"
+              <span className="inline-block text-primary font-sans text-sm tracking-[0.3em] uppercase mb-6">
+                Data Scientist · AI Practitioner · Researcher
+              </span>
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+              className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] mb-8"
             >
-              About Me
-            </a>
+              <span className="text-foreground">The</span>
+              <br />
+              <span className="text-primary animate-gold-shimmer">Saheedat</span>
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="font-sans text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
+            >
+              Turning complex data into clear decisions. 8+ years bridging analytics,
+              machine learning, and responsible AI — from banking fraud detection to
+              pioneering governance frameworks.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.45 }}
+              className="flex flex-wrap gap-4"
+            >
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm tracking-wide hover:bg-primary/90 transition-colors"
+              >
+                View My Work
+              </a>
+              <a
+                href="#about"
+                className="inline-flex items-center gap-2 border border-border text-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm tracking-wide hover:bg-secondary transition-colors"
+              >
+                About Me
+              </a>
+            </motion.div>
+          </div>
+
+          {/* Profile photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden lg:flex justify-center"
+          >
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm" />
+              <img
+                src={profileImg}
+                alt="Saheedat Abbas"
+                className="relative w-[380px] h-[460px] object-cover object-top rounded-2xl border border-primary/20"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
