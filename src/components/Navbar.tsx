@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Expertise", href: "#competencies" },
@@ -26,8 +27,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-serif text-xl font-bold text-foreground">
-          The <span className="text-primary">Saheedat</span>
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="The Saheedat logo" className="h-9 w-9 object-contain" />
+          <span className="font-serif text-xl font-bold text-foreground">
+            The <span className="text-primary">Saheedat</span>
+          </span>
         </a>
 
         {/* Desktop */}
