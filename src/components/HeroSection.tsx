@@ -10,7 +10,24 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 left-1/6 w-[300px] h-[300px] rounded-full bg-primary/3 blur-[100px] pointer-events-none" />
 
       <div className="container relative z-10 px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center direction-rtl">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Profile photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="hidden lg:flex justify-center"
+          >
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm" />
+              <img
+                src={profileImg}
+                alt="Saheedat Abbas"
+                className="relative w-[380px] h-[460px] object-cover object-top rounded-2xl border border-primary/20"
+              />
+            </div>
+          </motion.div>
+
           {/* Text */}
           <div>
             <motion.div
@@ -64,23 +81,6 @@ const HeroSection = () => {
               </a>
             </motion.div>
           </div>
-
-          {/* Profile photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="hidden lg:flex justify-center"
-          >
-            <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-br from-primary/40 to-primary/10 rounded-2xl blur-sm" />
-              <img
-                src={profileImg}
-                alt="Saheedat Abbas"
-                className="relative w-[380px] h-[460px] object-cover object-top rounded-2xl border border-primary/20"
-              />
-            </div>
-          </motion.div>
         </div>
       </div>
 
