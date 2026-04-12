@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Globe } from "lucide-react";
+import { Mail, Linkedin, Download } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -38,6 +38,14 @@ const ContactSection = () => {
             >
               <Linkedin className="w-4 h-4" />
               LinkedIn
+            </a>
+            <a
+              href="/Saheedat_Abbas_CV.pdf"
+              download
+              className="inline-flex items-center gap-3 border border-border text-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm hover:bg-secondary transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              Download CV
             </a>
           </div>
         </motion.div>
