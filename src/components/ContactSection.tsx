@@ -18,8 +18,7 @@ const ContactSection = () => {
           </h2>
           <div className="w-16 h-0.5 bg-primary mx-auto mb-8" />
           <p className="font-sans text-muted-foreground leading-relaxed mb-10">
-            Whether it's a data science challenge, AI governance consultation, or academic 
-            collaboration — I'd love to hear from you.
+            Whether it is a data science challenge, AI governance consultation, Digital Transformation or academic collaboration,  I would love to hear from you.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">

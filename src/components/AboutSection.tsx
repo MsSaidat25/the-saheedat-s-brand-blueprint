@@ -3,10 +3,10 @@ import { GraduationCap, Briefcase, BookOpen, Award } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 const milestones = [
-  { icon: Briefcase, label: "8+ Years", detail: "Data & Analytics Experience" },
-  { icon: GraduationCap, label: "MS Student", detail: "University of Michigan" },
-  { icon: BookOpen, label: "Published", detail: "AI Governance in JERR" },
-  { icon: Award, label: "Professor", detail: "Adjunct at Lambton College" },
+  { icon: Briefcase, label: "10+ Years", detail: "Data & Analytics Experience" },
+  { icon: GraduationCap, label: "Ambassador", detail: "Google Women Techmakers\nTechnovation Global" },
+  { icon: BookOpen, label: "Mentor", detail: "AI Ventures Accelerator \nWIMBIZ" },
+  { icon: Award, label: "Adjunct Professor", detail: "Lambton College" },
 ];
 
 const AboutSection = () => {
@@ -22,7 +22,7 @@ const AboutSection = () => {
           >
             <span className="text-primary font-sans text-sm tracking-[0.3em] uppercase">About</span>
             <h2 className="font-serif text-3xl md:text-5xl font-bold mt-3 mb-6 text-foreground">
-              Saheedat Abbas
+              Saheedat Olasumbo Abbas
             </h2>
             <div className="w-16 h-0.5 bg-primary mb-8" />
 
@@ -37,9 +37,9 @@ const AboutSection = () => {
 
             <div className="space-y-5 font-sans text-muted-foreground leading-relaxed">
               <p>
-                I'm a Data Scientist and AI Practitioner with over 8 years of experience
+                I am a Data Engineer and AI Practitioner with over 10 years of experience
                 transforming complex datasets into strategic insights. My career spans
-                major financial institutions including Scotiabank, CIBC, and NAV Canada.
+                major financial institutions in Africa & North America.
               </p>
               <p>
                 Currently pursuing my Master's at the University of Michigan while serving
@@ -71,7 +71,7 @@ const AboutSection = () => {
                 >
                   <m.icon className="w-8 h-8 text-primary mx-auto mb-3" />
                   <div className="font-serif text-lg font-bold text-foreground">{m.label}</div>
-                  <div className="font-sans text-xs text-muted-foreground mt-1">{m.detail}</div>
+                  <div className="font-sans text-xs text-muted-foreground mt-1 text-left whitespace-pre-line">{m.detail}</div>
                 </motion.div>
               ))}
             </div>
