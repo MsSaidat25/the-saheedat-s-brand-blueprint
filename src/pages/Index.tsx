@@ -21,3 +21,8 @@ const Index = () => {
 };
 
 export default Index;
+// At the top with other imports:
+import ChatAssistant from "@/components/ChatAssistant";
+
+// Inside the return, just before the closing </div>:
+<ChatAssistant />
