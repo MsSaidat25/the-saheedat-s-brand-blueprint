@@ -71,7 +71,7 @@ const AboutSection = () => {
                 >
                   <m.icon className="w-8 h-8 text-primary mx-auto mb-3" />
                   <div className="font-serif text-lg font-bold text-foreground">{m.label}</div>
-                  <div className="font-sans text-xs text-muted-foreground mt-1 text-left whitespace-pre-line">{m.detail}</div>
+                  <div className="font-sans text-xs text-muted-foreground mt-1 text-center whitespace-pre-line">{m.detail}</div>
                 </motion.div>
               ))}
             </div>
