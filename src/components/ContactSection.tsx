@@ -30,7 +30,7 @@ const ContactSection = () => {
               Get in Touch
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/saheedat-abbas/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-border text-foreground px-8 py-3.5 rounded-md font-sans font-medium text-sm hover:bg-secondary transition-colors"
