@@ -36,7 +36,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block text-primary font-sans text-sm tracking-[0.3em] uppercase mb-6">
-                Data Scientist · AI Practitioner · Researcher
+                Data Engineer · AI Practitioner · Researcher
               </span>
             </motion.div>
 
@@ -54,9 +54,9 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="font-sans text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed mb-10"
+              className="font-sans text-muted-foreground text-lg md:text-xl max-w-2xl leading-relaxed mb-10 text-left"
             >
-              Turning complex data into clear decisions. 8+ years bridging analytics,
+              Turning complex data into clear decisions. 10+ years bridging analytics,
               machine learning, and responsible AI — from banking fraud detection to
               pioneering governance frameworks.
             </motion.p>
