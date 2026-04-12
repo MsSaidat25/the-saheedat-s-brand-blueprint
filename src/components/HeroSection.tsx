@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 left-1/6 w-[300px] h-[300px] rounded-full bg-primary/3 blur-[100px] pointer-events-none" />
 
       <div className="container relative z-10 px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center direction-rtl">
           {/* Text */}
           <div>
             <motion.div
