@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import ChatAssistant from "@/components/ChatAssistant";
 
 const Index = () => {
   return (
@@ -16,13 +17,9 @@ const Index = () => {
       <AboutSection />
       <ContactSection />
       <Footer />
+      <ChatAssistant />
     </div>
   );
 };
 
 export default Index;
-// At the top with other imports:
-import ChatAssistant from "@/components/ChatAssistant";
-
-// Inside the return, just before the closing </div>:
-<ChatAssistant />
