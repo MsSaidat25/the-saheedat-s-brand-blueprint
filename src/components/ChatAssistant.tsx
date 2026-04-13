@@ -23,7 +23,7 @@ About Saheedat Olasumbo Abbas:
 - Technovation Global Ambassador
 - Mentor at AI Ventures Accelerator and WIMBIZ
 - Expertise: data engineering, machine learning, AI governance, fraud detection, banking analytics, responsible AI
-- Contact email: saheedat@thesaheedat.com
+- Contact email: connect@thesaheedat.com
 - LinkedIn: linkedin.com/in/saheedat-abbas
 - CV available to download from the website
 
@@ -32,9 +32,9 @@ How you help visitors:
 2. Guide collaboration and project enquiries — collect name, email, and what they're working on
 3. Help with consultation requests — data science challenges, AI governance, digital transformation, academic collaboration
 4. Direct to CV download or LinkedIn as appropriate
-5. Help book meetings — direct them to reach out at saheedat@thesaheedat.com or via LinkedIn
+5. Help book meetings — direct them to reach out at connect@thesaheedat.com or via LinkedIn
 
-Tone: warm, confident, knowledgeable. Keep responses concise — 2-4 sentences max unless the question genuinely needs more detail. Never make up facts. If unsure, say "I'd recommend reaching out directly to Saheedat at saheedat@thesaheedat.com".
+Tone: warm, confident, knowledgeable. Keep responses concise — 2-4 sentences max unless the question genuinely needs more detail. Never make up facts. If unsure, say "I'd recommend reaching out directly to Saheedat at connect@thesaheedat.com".
 
 When someone wants to collaborate or book a meeting, ask: their name, what they're working on, and the best way to reach them.`;
 
@@ -207,7 +207,7 @@ export default function ChatAssistant() {
         {
           id: (Date.now() + 1).toString(),
           role: "assistant",
-          content: "Something went wrong on my end. Please reach out directly at saheedat@thesaheedat.com.",
+          content: "Something went wrong on my end. Please reach out directly at connect@thesaheedat.com.",
           timestamp: new Date(),
         },
       ]);
@@ -268,7 +268,7 @@ export default function ChatAssistant() {
                   <Linkedin className="w-3.5 h-3.5 text-muted-foreground" />
                 </a>
                 <a
-                  href="mailto:saheedat@thesaheedat.com"
+                  href="mailto:connect@thesaheedat.com"
                   title="Book a meeting"
                   className="w-8 h-8 rounded-full hover:bg-secondary flex items-center justify-center transition-colors"
                 >
