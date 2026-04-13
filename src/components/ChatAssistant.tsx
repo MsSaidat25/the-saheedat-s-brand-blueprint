@@ -11,7 +11,7 @@ interface Message {
 }
 
 // ─── System Prompt ────────────────────────────────────────────────────────────
-const SYSTEM_PROMPT = `You are Saheedat's personal AI assistant on her portfolio website. You speak warmly, professionally and concisely on her behalf.
+const SYSTEM_PROMPT = `You are TheSaheedat's personal AI assistant on her portfolio website. You speak warmly, professionally and concisely on her behalf.
 
 About Saheedat Olasumbo Abbas:
 - Data Engineer and AI Practitioner with 10+ years of experience
@@ -54,7 +54,7 @@ function handleQuickAction(text: string): string | null {
   }
   if (text.toLowerCase().includes("linkedin")) {
     window.open("https://www.linkedin.com/in/saheedat-abbas/", "_blank");
-    return "I've opened Saheedat's LinkedIn profile in a new tab.";
+    return "I have opened Saheedat's LinkedIn profile in a new tab.";
   }
   return null;
 }
@@ -82,7 +82,7 @@ async function callOpenRouter(messages: { role: string; content: string }[]): Pr
 
   if (!res.ok) throw new Error("API request failed");
   const data = await res.json();
-  return data.choices?.[0]?.message?.content ?? "I'm having trouble responding right now. Please reach out directly at saheedat@thesaheedat.com.";
+  return data.choices?.[0]?.message?.content ?? "I'm having trouble responding right now. Please reach out directly at connect@thesaheedat.com.";
 }
 
 // ─── Message Bubble ───────────────────────────────────────────────────────────
