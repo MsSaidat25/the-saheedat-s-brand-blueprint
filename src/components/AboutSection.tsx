@@ -22,7 +22,7 @@ const credentials = [
     color: "bg-purple-50",
     title: "AI Engineer Certification",
     sub: "In progress",
-    badge: null,
+    badge: "currently studying",
     link: null,
   },
   {
@@ -41,12 +41,6 @@ const credentials = [
     badge: "Read publication ↗",
     link: "https://journaljerr.com/index.php/JERR/article/view/1761",
   },
-];
-
-const stats = [
-  { number: "10+", desc: "Years of experience" },
-  { number: "2", desc: "Continents of impact" },
-  { number: "3", desc: "Advanced credentials" },
 ];
 
 const AboutSection = () => {
@@ -99,19 +93,6 @@ const AboutSection = () => {
                   ones. I don't just build AI. I build AI that organizations can trust, scale, and defend.
                 </p>
               </div>
-
-              {/* Stats */}
-              <div className="flex gap-8 mt-10 pt-8 border-t border-border">
-                {stats.map((s) => (
-                  <div key={s.desc} className="flex-1">
-                    <div className="font-serif text-4xl font-bold text-foreground leading-none mb-1">
-                      {s.number}
-                    </div>
-                    <div className="font-sans text-[11.5px] text-muted-foreground tracking-wide">{s.desc}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
 
             {/* Credentials */}
             <div>
