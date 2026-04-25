@@ -6,7 +6,7 @@ const credentials = [
     color: "bg-emerald-50",
     title: "Master's in Digital Transformation & Innovation",
     sub: "University of Michigan",
-    badge: In Progress,
+    badge: "In Progress",
   },
   {
     icon: "📊",
