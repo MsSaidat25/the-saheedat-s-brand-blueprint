@@ -66,34 +66,34 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-start">
 
             {/* Bio */}
-<div>
-  <div className="space-y-5 font-sans text-muted-foreground text-[15.5px] leading-[1.9] font-light">
-    <p>
-      I am a Data Engineer and AI Practitioner with over 10 years of experience
-      transforming complex datasets into strategic, business-defining insights. My
-      career spans major financial institutions and Aviation Industry across Africa and North America, 
-      giving me a rare, cross-continental perspective on how data infrastructure and intelligent
-      systems operate at scale.
-    </p>
-    <p>
-      Armed with an MBA in Analytics from Carleton University and a Master's in Digital
-      Transformation and Innovation from the University of Michigan, I sit at the
-      intersection of rigorous academic research and real-world industry impact. Currently
-      deepening my technical edge through an AI Engineer certification, I remain committed
-      to staying at the frontier of what's possible, not just in theory, but in practice.
-    </p>
-    <p>
-      As an Adjunct Professor at Lambton College, I translate that intersection into the
-      classroom, preparing the next generation of data professionals to think critically
-      and build responsibly.
-    </p>
-    <p>
-      My peer-reviewed research on AI governance frameworks for enterprise security,
-      reflects a conviction that the most powerful systems are also the most principled
-      ones. I don't just build AI. I build AI that organizations can trust, scale, and defend.
-    </p>
-  </div>
-</div>
+            <div>
+              <div className="space-y-5 font-sans text-muted-foreground text-[15.5px] leading-[1.9] font-light">
+                <p>
+                  I am a Data Engineer and AI Practitioner with over 10 years of experience
+                  transforming complex datasets into strategic, business-defining insights. My
+                  career spans major financial institutions and Aviation Industry across Africa and North America,
+                  giving me a rare, cross-continental perspective on how data infrastructure and intelligent
+                  systems operate at scale.
+                </p>
+                <p>
+                  Armed with an MBA in Analytics from Carleton University and a Master's in Digital
+                  Transformation and Innovation from the University of Michigan, I sit at the
+                  intersection of rigorous academic research and real-world industry impact. Currently
+                  deepening my technical edge through an AI Engineer certification, I remain committed
+                  to staying at the frontier of what's possible, not just in theory, but in practice.
+                </p>
+                <p>
+                  As an Adjunct Professor at Lambton College, I translate that intersection into the
+                  classroom, preparing the next generation of data professionals to think critically
+                  and build responsibly.
+                </p>
+                <p>
+                  My peer-reviewed research on AI governance frameworks for enterprise security,
+                  reflects a conviction that the most powerful systems are also the most principled
+                  ones. I don't just build AI. I build AI that organizations can trust, scale, and defend.
+                </p>
+              </div>
+
               {/* Stats */}
               <div className="flex gap-8 mt-10 pt-8 border-t border-border">
                 {stats.map((s) => (
