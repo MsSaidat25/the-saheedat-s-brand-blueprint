@@ -43,6 +43,12 @@ const credentials = [
   },
 ];
 
+const stats = [
+  { number: "10+", desc: "Years of experience" },
+  { number: "2", desc: "Continents of impact" },
+  { number: "3", desc: "Advanced credentials" },
+];
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 md:py-32">
