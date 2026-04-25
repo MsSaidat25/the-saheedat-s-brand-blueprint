@@ -6,13 +6,13 @@ const credentials = [
     color: "bg-emerald-50",
     title: "Master's in Digital Transformation & Innovation",
     sub: "University of Michigan",
-    badge: null,
+    badge: In Progress,
   },
   {
     icon: "📊",
     color: "bg-amber-50",
     title: "MBA in Analytics",
-    sub: "Graduate degree",
+    sub: "Carleton University",
     badge: null,
   },
   {
@@ -69,9 +69,9 @@ const AboutSection = () => {
             <div>
               <div className="space-y-5 font-sans text-muted-foreground text-[15.5px] leading-[1.9] font-light">
                 <p>
-                  <strong className="text-foreground font-medium">Data Engineer and AI Practitioner</strong> with over 10 years of experience
+                  <strong className="text-foreground font-medium">I am a Data Engineer and AI Practitioner</strong> with over 10 years of experience
                   transforming complex datasets into strategic, business-defining insights. My career spans major
-                  financial institutions across Africa and North America, giving me a rare, cross-continental
+                  across Africa and North America, giving me a rare, cross-continental
                   perspective on how data infrastructure and intelligent systems operate at scale.
                 </p>
                 <p>
