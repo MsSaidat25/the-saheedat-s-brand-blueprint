@@ -4,7 +4,7 @@ const credentials = [
   {
     icon: "🎓",
     color: "bg-emerald-50",
-    title: "Master's in Digital Transformation & Innovation",
+    title: "MS Digital Transformation & Innovation",
     sub: "University of Michigan",
     badge: null,
     link: null,
@@ -22,7 +22,7 @@ const credentials = [
     color: "bg-purple-50",
     title: "AI Engineer Certification",
     sub: "In progress",
-    badge: "currently studying",
+    badge: "Currently Studying",
     link: null,
   },
   {
@@ -88,11 +88,12 @@ const AboutSection = () => {
                   and build responsibly.
                 </p>
                 <p>
-                  My peer-reviewed research on AI governance frameworks for enterprise security,
+                  My peer-reviewed research on AI governance frameworks for enterprise security
                   reflects a conviction that the most powerful systems are also the most principled
                   ones. I don't just build AI. I build AI that organizations can trust, scale, and defend.
                 </p>
               </div>
+            </div>
 
             {/* Credentials */}
             <div>
