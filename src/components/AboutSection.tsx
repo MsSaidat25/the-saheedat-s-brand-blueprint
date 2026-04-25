@@ -1,82 +1,145 @@
 import { motion } from "framer-motion";
-import { GraduationCap, Briefcase, BookOpen, Award } from "lucide-react";
-import profileImg from "@/assets/profile.jpg";
 
-const milestones = [
-  { icon: Briefcase, label: "10+ Years", detail: "Data & Analytics Experience" },
-  { icon: GraduationCap, label: "Ambassador", detail: "Google Women Techmakers\nTechnovation Global" },
-  { icon: BookOpen, label: "Mentor", detail: "AI Ventures Accelerator \nWIMBIZ" },
-  { icon: Award, label: "Adjunct Professor", detail: "Lambton College" },
+const credentials = [
+  {
+    icon: "🎓",
+    color: "bg-emerald-50",
+    title: "Master's in Digital Transformation & Innovation",
+    sub: "University of Michigan",
+    badge: null,
+  },
+  {
+    icon: "📊",
+    color: "bg-amber-50",
+    title: "MBA in Analytics",
+    sub: "Graduate degree",
+    badge: null,
+  },
+  {
+    icon: "🤖",
+    color: "bg-purple-50",
+    title: "AI Engineer Certification",
+    sub: "In progress",
+    badge: "Currently studying",
+  },
+  {
+    icon: "🏛️",
+    color: "bg-blue-50",
+    title: "Adjunct Professor",
+    sub: "Lambton College",
+    badge: null,
+  },
+  {
+    icon: "📝",
+    color: "bg-emerald-50",
+    title: "Published — AI Governance Frameworks",
+    sub: "Research & industry application",
+    badge: null,
+  },
+];
+
+const stats = [
+  { number: "10+", desc: "Years of experience" },
+  { number: "2", desc: "Continents of impact" },
+  { number: "3", desc: "Advanced credentials" },
 ];
 
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 md:py-32">
       <div className="container px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-primary font-sans text-sm tracking-[0.3em] uppercase">About</span>
-            <h2 className="font-serif text-3xl md:text-5xl font-bold mt-3 mb-6 text-foreground">
-              Saheedat Olasumbo Abbas
-            </h2>
-            <div className="w-16 h-0.5 bg-primary mb-8" />
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+        >
+          <span className="text-primary font-sans text-sm tracking-[0.3em] uppercase">About</span>
 
-            {/* Mobile-only photo */}
-            <div className="lg:hidden mb-8 flex justify-center">
-              <img
-                src={profileImg}
-                alt="Saheedat Abbas"
-                className="w-64 h-72 object-cover object-top rounded-xl border border-primary/20"
-              />
+          <h2 className="font-serif text-4xl md:text-6xl font-bold leading-[1.1] mt-4 mb-4 text-foreground">
+            Data Engineer.<br />
+            <em className="not-italic text-muted-foreground">AI Practitioner.</em><br />
+            Educator.
+          </h2>
+
+          <div className="w-12 h-0.5 bg-border mb-10" />
+
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-start">
+            {/* Bio */}
+            <div>
+              <div className="space-y-5 font-sans text-muted-foreground text-[15.5px] leading-[1.9] font-light">
+                <p>
+                  <strong className="text-foreground font-medium">Data Engineer and AI Practitioner</strong> with over 10 years of experience
+                  transforming complex datasets into strategic, business-defining insights. My career spans major
+                  financial institutions across Africa and North America, giving me a rare, cross-continental
+                  perspective on how data infrastructure and intelligent systems operate at scale.
+                </p>
+                <p>
+                  Armed with an <strong className="text-foreground font-medium">MBA in Analytics</strong> and a{" "}
+                  <strong className="text-foreground font-medium">Master's in Digital Transformation and Innovation</strong>, I sit at the
+                  intersection of rigorous academic research and real-world industry impact. Currently deepening my
+                  technical edge through an{" "}
+                  <strong className="text-foreground font-medium">AI Engineer certification</strong>, I remain committed
+                  to staying at the frontier of what's possible — not just in theory, but in practice.
+                </p>
+                <p>
+                  As an <strong className="text-foreground font-medium">Adjunct Professor at Lambton College</strong>, I translate that
+                  intersection into the classroom, preparing the next generation of data professionals to think
+                  critically and build responsibly.
+                </p>
+                <p>
+                  My published work on{" "}
+                  <strong className="text-foreground font-medium">AI governance frameworks</strong> reflects a conviction
+                  that the most powerful systems are also the most principled ones. I don't just build AI. I build AI
+                  that organizations can trust, scale, and defend.
+                </p>
+              </div>
+
+              {/* Stats */}
+              <div className="flex gap-8 mt-10 pt-8 border-t border-border">
+                {stats.map((s) => (
+                  <div key={s.desc} className="flex-1">
+                    <div className="font-serif text-4xl font-bold text-foreground leading-none mb-1">{s.number}</div>
+                    <div className="font-sans text-[11.5px] text-muted-foreground tracking-wide">{s.desc}</div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="space-y-5 font-sans text-muted-foreground leading-relaxed">
-              <p>
-                I am a Data Engineer and AI Practitioner with over 10 years of experience
-                transforming complex datasets into strategic insights. My career spans
-                major financial institutions in Africa & North America.
+            {/* Credentials */}
+            <div>
+              <p className="font-sans text-[10px] tracking-[0.15em] uppercase text-muted-foreground mb-4 font-medium">
+                Credentials &amp; Roles
               </p>
-              <p>
-                Currently pursuing my Master's at the University of Michigan while serving
-                as an Adjunct Professor at Lambton College, I bridge the gap between
-                cutting-edge AI research and practical industry application.
-              </p>
-              <p>
-                My published work on AI governance frameworks reflects my commitment to
-                building AI systems that are not only powerful but responsible and ethical.
-              </p>
+              <div className="space-y-2.5">
+                {credentials.map((c, i) => (
+                  <motion.div
+                    key={c.title}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
+                    className="flex items-start gap-3.5 p-4 rounded-xl border border-border bg-card hover:border-primary/30 transition-colors"
+                  >
+                    <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 text-[15px] ${c.color}`}>
+                      {c.icon}
+                    </div>
+                    <div>
+                      <p className="font-sans text-[13px] font-medium text-foreground leading-snug">{c.title}</p>
+                      <p className="font-sans text-[11.5px] text-muted-foreground mt-0.5">{c.sub}</p>
+                      {c.badge && (
+                        <span className="inline-flex items-center gap-1.5 text-[10px] font-medium text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full mt-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                          {c.badge}
+                        </span>
+                      )}
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
-            <div className="grid grid-cols-2 gap-4">
-              {milestones.map((m, i) => (
-                <motion.div
-                  key={m.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: 0.3 + i * 0.1 }}
-                  className="bg-card border border-border rounded-lg p-6 text-center hover:border-primary/40 transition-colors"
-                >
-                  <m.icon className="w-8 h-8 text-primary mx-auto mb-3" />
-                  <div className="font-serif text-lg font-bold text-foreground">{m.label}</div>
-                  <div className="font-sans text-xs text-muted-foreground mt-1 text-center whitespace-pre-line">{m.detail}</div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
